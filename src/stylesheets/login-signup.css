@@ -1,0 +1,87 @@
+@import url('../stylesheets/styles.css');
+
+.pattern-bg {
+    background: url('../assets/bg.svg');
+    background-repeat: repeat;
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+}
+
+.login-signup-form {
+    background-color: var(--base-color);
+    box-shadow: var(--card-shadow);
+    text-align: center;
+}
+
+.login-signup-form .login-signup-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.move-text {
+    color: var(--cta-color);
+}
+
+.input-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin: 1.6rem auto;
+    width: 80%;
+}
+
+.input-container .input-field {
+    border: solid 2px var(--primary-color);
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.password-label{
+    position: relative;
+}
+
+.eye-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: var(--primary-color);
+    background: transparent;
+    border: none;
+}
+
+.error-text{
+    color: #E83A14;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .pattern-bg {
+        min-height: 90vh;
+    }
+
+    .login-signup-form {
+        width: 60%;
+    }
+
+    .input-container {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .pattern-bg {
+        min-height: auto;
+    }
+
+    .login-signup-form {
+        width: 40%;
+    }
+
+    .input-container {
+        width: 60%;
+    }
+}

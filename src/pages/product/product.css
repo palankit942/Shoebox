@@ -1,0 +1,91 @@
+@import url("../../stylesheets/styles.css");
+
+.product-content {
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+}
+
+.filter-drawer {
+    display: none;
+    background-color: var(--base-color);
+    z-index: 8;
+    position: fixed;
+    width: 50%;
+    height: 80vh;
+    overflow-y: scroll;
+    border-right: solid 1px var(--hover-color);
+}
+
+.hr-gray-line {
+    border-top: solid 1px var(--hover-color);
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.filter {
+    accent-color: var(--cta-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.filter-head .btn-outline {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filter .filter-heading {
+    margin-bottom: 5px;
+}
+
+.filter-btn {
+    z-index: 9;
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+}
+
+.filter-btn .btn-round {
+    background-color: var(--cta-color);
+    color: var(--primary-color);
+    width: 4rem;
+    height: 4rem;
+}
+
+.category .category-list-item {
+    padding-left: 1rem;
+}
+
+.product-section .product-cards {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-section .product-cards .card {
+    box-shadow: var(--card-shadow);
+}
+
+@media only screen and (min-width: 800px) {
+    div.product-content {
+        grid-template-columns: 22% auto;
+    }
+
+    section.filter-drawer {
+        display: block;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 8rem;
+        width: auto;
+        height: 80vh;
+        overflow-y: scroll;
+    }
+
+    .filter-btn {
+        display: none;
+    }
+}

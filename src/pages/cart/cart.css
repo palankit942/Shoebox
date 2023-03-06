@@ -1,0 +1,72 @@
+@import url('../../stylesheets/styles.css');
+
+.cart-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.bill-container {
+    box-shadow: var(--card-shadow);
+    height: fit-content;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gray-hr-line {
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    border-top: solid 2px var(--hover-color);
+    border-radius: 5px;
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cart-card {
+    box-shadow: var(--card-shadow);
+    border-radius: 5px;
+}
+
+.product-quantity .btn-quantity {
+    background-color: var(--cta-color);
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.product-quantity .text-quantity {
+    border: solid 2px var(--primary-color);
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.cart-img{
+    width: 12rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.cart-content{
+    width: 12rem;
+    height: auto;
+}
+
+@media only screen and (min-width: 800px) {
+    .cart-component {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .bill-container {
+        margin: 0;
+    }
+}

@@ -1,0 +1,75 @@
+@import url('../stylesheets/styles.css');
+
+/* navbar css */
+.shoebox-navbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 0 1rem 1rem 1rem;
+    background-color: var(--base-color);
+    box-shadow: var(--nav-shadow);
+}
+
+.shoebox-navbar nav {
+    display: grid;
+    grid-template-areas:
+        "logo links"
+        "search search";
+    align-items: center;
+}
+
+.shoebox-logo {
+    grid-area: logo;
+}
+
+.shoebox-logo img {
+    width: 16rem;
+}
+
+.nav-links {
+    grid-area: links;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links .nav-items {
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.nav-links .btn-outline {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.search-bar {
+    grid-area: search;
+}
+
+.search-bar .simple-input {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.shoebox-navbar .badge-ico {
+    background-color: var(--cta-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 800px) {
+    .shoebox-navbar {
+        padding-bottom: 0;
+    }
+
+    .shoebox-navbar nav {
+        grid-template-areas: "logo search links";
+    }
+
+    .search-bar {
+        justify-self: center;
+    }
+}

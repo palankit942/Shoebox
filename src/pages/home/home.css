@@ -1,0 +1,52 @@
+@import url("../../stylesheets/styles.css");
+
+.home-content {
+    text-align: center;
+}
+
+.btn-hero {
+    background-color: var(--cta-color);
+    color: var(--primary-color);
+    margin: 3rem auto;
+    width: max-content;
+}
+
+.btn-hero:hover {
+    box-shadow: var(--btn-shadow);
+}
+
+.gender-cards-section {
+    position: relative;
+    z-index: 2;
+    top: -1rem;
+    background: #2c2e43;
+    background: linear-gradient(180deg, rgba(44, 46, 67, 1) 15%, rgba(255, 255, 255, 1) 95%);
+    color: var(--cta-color);
+}
+
+.gender-cards-section .card {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.gender-cards-section .card:hover {
+    transform: scale(1.02);
+}
+
+
+@media only screen and (min-width: 800px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero .hero-content {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .btn-hero {
+        margin: 3rem 0;
+        width: max-content;
+    }
+}

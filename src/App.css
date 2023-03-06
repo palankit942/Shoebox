@@ -1,0 +1,11 @@
+@import url('./stylesheets/styles.css');
+
+.main {
+    margin: 11rem 0 0 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .main {
+        margin-top: 7rem;
+    }
+}
