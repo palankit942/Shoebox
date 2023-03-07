@@ -85,9 +85,9 @@ function CheckoutBill({ selectedAddress }) {
 					navigate(`/order/${orderId}`);
 				},
 				prefill: {
-					name: "Varun Verma",
-					email: "varun@gmail.com",
-					contact: "8877573687",
+					name: "Ankit pal",
+					email: "palankit@gmail.com",
+					contact: "7880548132",
 				},
       };
 
